@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block conten %}
+<h1>🤴Residencia 5🤴 </h1>
+
+{% for estudiante in estudiantes %}
+
+{% if estudiante.residencia == 5 %}
+<div>
+    <h3 class="nombre">{{estudiante.nombre_estudiante}}</h3>
+    <h3 class="colchon">{{estudiante.colchon}}</h3>
+    <h3 class="lugar">{{estudiante.colchon.lugar}}</h3>
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% endblock %}

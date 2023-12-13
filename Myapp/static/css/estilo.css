@@ -1,0 +1,68 @@
+body {
+    background: #202020;
+    color: red;
+    
+    
+    
+}
+
+.navegar{
+    padding: 20px ;
+    background: #2c0101;
+    
+}
+
+.navegar ul li a {
+    color: rgb(13, 240, 13);
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.navegar li{
+    list-style: none;
+}
+
+.navegar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegar ul li a:hover{
+    color: red;
+    
+}
+
+.navegar ul li a:active{
+    color: blue;
+}
+
+h3{
+    display:inline-block;
+    padding: 5px ;
+    
+
+}
+
+.nombre{
+    color: rgb(59, 244, 13);
+    font-family: cursive;
+    margin-left: 30px;
+}
+
+.colchon{
+    color: rgb(230, 250, 11);
+    margin-left: 40px;
+}
+
+.lugar{
+    color: rgb(255, 0, 115);
+    margin-left: 45px;
+}
+ p{
+    margin: 5px;
+ }
+
+ 
+    
+    
