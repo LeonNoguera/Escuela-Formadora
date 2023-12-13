@@ -31,7 +31,6 @@ DEBUG ='RENDER' not in os.environ
 
 ALLOWED_HOSTS =  ['10.0.2.2','127.0.0.1','localhost']
 
-
 RENDER_EXTERNAL_HOSTNAME=os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -131,3 +130,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+else:
+
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
