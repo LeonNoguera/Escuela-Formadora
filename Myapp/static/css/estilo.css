@@ -1,5 +1,5 @@
 body {
-    background: #202020;
+    background: #0c0c14fb;
     color: red;
     
     
@@ -7,15 +7,15 @@ body {
 }
 
 .navegar{
-    padding: 20px ;
+    padding: 3% ;
     background: #2c0101;
     
 }
 
 .navegar ul li a {
-    color: rgb(13, 240, 13);
+    color: rgb(17, 240, 13);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 150%;
     
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .navegar ul li a:hover{
-    color: red;
+    color: rgb(64, 13, 216);
     
 }
 
@@ -39,7 +39,7 @@ body {
 
 h3{
     display:inline-block;
-    padding: 5px ;
+    padding: 0% ;
     
 
 }
@@ -47,21 +47,19 @@ h3{
 .nombre{
     color: rgb(59, 244, 13);
     font-family: cursive;
-    margin-left: 30px;
+    margin-left: 1%;
 }
 
 .colchon{
-    color: rgb(230, 250, 11);
-    margin-left: 40px;
+    color: rgb(52, 23, 216);
+    margin-left: 5%;
 }
 
 .lugar{
     color: rgb(255, 0, 115);
-    margin-left: 45px;
+    margin-left: 10%;
 }
- p{
-    margin: 5px;
- }
+ 
 
  
     
