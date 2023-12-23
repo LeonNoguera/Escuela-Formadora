@@ -17,8 +17,8 @@ class Colchon(models.Model):
     boton=models.BooleanField(default=False)
     def __str__(self):
         x=str(self.numero_colchon)
-        l=str(self.lugar)
-        return f"{x}-{l}"
+        
+        return f"Colchon {x}"
 
 
 

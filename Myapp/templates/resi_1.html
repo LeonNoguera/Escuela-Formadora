@@ -5,17 +5,19 @@
 {% block conten %}
 
 <h1>👸Residencia 1👸</h1>
-
+<TABLE>
 {% for estudiante in estudiantes %}
 
 {% if estudiante.residencia == 1 %}
-<div>
-    <h3 class="nombre">{{estudiante.nombre_estudiante}}</h3>
-    <h3 class="colchon">{{estudiante.colchon}}</h3>
-    <h3 class="lugar">{{estudiante.colchon.lugar}}</h3>
-</div>
+
+    <tr>
+        <td><h3 class="nombre">{{estudiante.nombre_estudiante}}</h3></td>
+        <td><h3 class="colchon">{{estudiante.colchon}}</h3></td>
+        <td><h3 class="lugar">{{estudiante.colchon.lugar}}</h3></td>
+    </tr>
+
 {% endif %}
 
 {% endfor %}
-
+</TABLE>
 {% endblock %}
