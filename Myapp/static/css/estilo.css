@@ -12,7 +12,7 @@ table {
 .navegar{
     width: 100%;
     background: #130221;
-    
+
     
 }
 
@@ -29,7 +29,14 @@ table {
 
 .navegar ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+ 
+@media ( max-width: 767px ){
+    .navegar{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .navegar ul li a:hover{
