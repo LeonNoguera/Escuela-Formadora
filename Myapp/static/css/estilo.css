@@ -28,7 +28,7 @@ table {
 
 .navegar ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .navegar ul li a:hover{
