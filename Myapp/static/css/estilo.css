@@ -1,5 +1,5 @@
 body {
-    background: #0f0f47fb;
+    background: rgba(6, 6, 30, 0.984);
     color: red;
        
 }
@@ -12,8 +12,8 @@ table {
 .navegar{
     width: 100%;
     background: #130221;
+    padding: 2%;
 
-    
 }
 
 .navegar ul li a {
@@ -30,14 +30,10 @@ table {
 .navegar ul{
     display: flex;
     justify-content: space-around;
+    align-content: flex-start;
 }
  
-@media ( max-width: 767px ){
-    .navegar{
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 .navegar ul li a:hover{
     color: rgb(64, 13, 216);
