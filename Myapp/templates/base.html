@@ -8,38 +8,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega de colchones</title>
-    <link rel="stylesheet" href="{% static '/css/estilo.css' %}">
+    
+    <script src="{% static 'js/cdn.tailwindcss.js' %}"></script>
     <link rel="icon" type="image/png" href="{% static '/css/icono.png' %}">
     
 </head>
 <body>
-    <nav class="navegar">
-        <ul>
-            <li>
-                <a href="{% url 'Vienvenidos' %}">✅</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_1' %}">Residencia 1</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_2' %}">Residencia 2</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_3' %}">Residencia 3</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_4' %}">Residencia 4</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_5' %}">Residencia 5</a>
-            </li>
-            <li>
-                <a href="{% url 'Residencia_6' %}">Residencia 6</a>
-            </li>
-            <li>
-                <a href="/admin">👑</a>
-            </li>
-        </ul>
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="a"> 
+                <div  class="x">
+                    <ul class="flex justify-around content-start">
+                        <li>
+                            <a href="{% url 'Vienvenidos' %}" class="text-white  px-6 py-4">✅</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_1' %}" class="text-white  px-6 py-4">Residencia 1</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_2' %}" class="text-white  px-6 py-4">Residencia 2</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_3' %}" class="text-white  px-6 py-4">Residencia 3</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_4' %}" class="text-white  px-6 py-4">Residencia 4</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_5' %}" class="text-white  px-6 py-4">Residencia 5</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'Residencia_6' %}" class="text-white  px-6 py-4">Residencia 6</a>
+                        </li>
+                        <li>
+                            <a href="/admin">👑</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        
     </nav>
     
     {% block conten %}

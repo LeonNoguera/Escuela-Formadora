@@ -1,23 +1,16 @@
-body {
-    background: rgba(6, 6, 30, 0.984);
-    color: red;
-       
-}
+
 
 table {
     white-space: nowrap;
     margin: 2%;
     
 }
-.navegar{
-    width: 100%;
-    background: #130221;
-    padding: 2%;
 
-}
+
+
 
 .navegar ul li a {
-    color: rgb(17, 240, 13);
+ 
     text-decoration: none;
     
     
@@ -35,31 +28,7 @@ table {
  
 
 
-.navegar ul li a:hover{
-    color: rgb(64, 13, 216);
-    
-}
 
-.navegar ul li a:active{
-    color: blue;
-}
-
-
-.nombre{
-    color: rgb(59, 244, 13);
-    font-family: cursive;
-    margin-left: 1%;
-}
-
-.colchon{
-    color: rgb(52, 23, 216);
-    margin-left: 5%;
-}
-
-.lugar{
-    color: rgb(255, 0, 115);
-    margin-left: 10%;
-}
  
 
  
