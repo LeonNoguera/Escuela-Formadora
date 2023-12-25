@@ -4,7 +4,7 @@
 
 {% block conten %}
 
-<h1>👸Residencia 1👸</h1>
+<h1 class="p-6 text-red-400">👸Residencia 1👸</h1>
 <TABLE>
 {% for estudiante in estudiantes %}
 
@@ -12,8 +12,8 @@
 
     <tr>
         <td><h3 class="text-red-500">{{estudiante.nombre_estudiante}}</h3></td>
-        <td><h3 class="colchon">{{estudiante.colchon}}</h3></td>
-        <td><h3 class="lugar">{{estudiante.colchon.lugar}}</h3></td>
+        <td><h3 class="text-green-500">{{estudiante.colchon}}</h3></td>
+        <td><h3 class="text-blue-300">{{estudiante.colchon.lugar}}</h3></td>
     </tr>
 
 {% endif %}
