@@ -24,7 +24,6 @@ class Colchon(models.Model):
 
 class Estudiante(models.Model):
     nombre_estudiante=models.CharField(max_length=50, primary_key=True)
-    municipio=models.CharField(max_length=10)
     residencia=models.PositiveIntegerField()
     colchon=models.ForeignKey(Colchon, on_delete=models.CASCADE)
 
