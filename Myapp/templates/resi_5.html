@@ -2,34 +2,20 @@
 
 
 {% block conten %}
-<h1 class="p-6 text-red-400">🤴Residencia 5🤴 </h1>
+<h1 class="p-6 text-red-400">👸Residencia 5👸</h1>
 <TABLE whitespace-no-wrap>
 {% for estudiante in estudiantes %}
     
 {% if estudiante.residencia == 5 %}
-{% for estudiante in estudiantes %}
-
-{% if estudiante.residencia == 5 %}
-
-    <tr>
-        <td><h3 class="text-yellow-500">{{estudiante.nombre_estudiante}}</h3></td>
-        <td><h3 class="text-green-500">{{estudiante.colchon}}</h3></td>
-        <td><h3 class="text-blue-300">{{estudiante.colchon.lugar}}</h3></td>
-    </tr>
-
-{% endif %}
-
-{% endfor %}
-</TABLE> 
     
         <tr>
-            <td><h3 class="nombre">{{estudiante.nombre_estudiante}}</h3></td>
-            <td><h3 class="colchon">{{estudiante.colchon}}</h3></td>
-            <td><h3 class="lugar">{{estudiante.colchon.lugar}}</h3></td>
+            <td><h3 class="text-yellow-500">{{estudiante.nombre_estudiante}}</h3></td>
+            <td><h3 class="text-green-500">{{estudiante.colchon}}</h3></td>
+            <td><h3 class="text-blue-300">{{estudiante.colchon.lugar}}</h3></td>
         </tr>
     
 {% endif %}
-    
+
 {% endfor %}
 </TABLE>
 {% endblock %}
